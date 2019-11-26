@@ -1,0 +1,60 @@
+
+@inproceedings{sivathanu_astra:_2019,
+	address = {Providence, RI, USA},
+	title = {Astra: {Exploiting} {Predictability} to {Optimize} {Deep} {Learning}},
+	isbn = {978-1-4503-6240-5},
+	shorttitle = {Astra},
+	url = {http://dl.acm.org/citation.cfm?doid=3297858.3304072},
+	doi = {10.1145/3297858.3304072},
+	abstract = {We present Astra, a compilation and execution framework that optimizes execution of a deep learning training job. Instead of treating the computation as a generic data flow graph, Astra exploits domain knowledge about deep learning to adopt a custom approach to compiler optimization.},
+	language = {en},
+	urldate = {2019-11-26},
+	booktitle = {Proceedings of the {Twenty}-{Fourth} {International} {Conference} on {Architectural} {Support} for {Programming} {Languages} and {Operating} {Systems} - {ASPLOS} '19},
+	publisher = {ACM Press},
+	author = {Sivathanu, Muthian and Chugh, Tapan and Singapuram, Sanjay S. and Zhou, Lidong},
+	year = {2019},
+	pages = {909--923},
+	file = {Sivathanu 等。 - 2019 - Astra Exploiting Predictability to Optimize Deep .pdf:files/3/Sivathanu 等。 - 2019 - Astra Exploiting Predictability to Optimize Deep .pdf:application/pdf}
+}
+
+@inproceedings{hua_boosting_2019,
+	address = {Columbus, OH, USA},
+	title = {Boosting the {Performance} of {CNN} {Accelerators} with {Dynamic} {Fine}-{Grained} {Channel} {Gating}},
+	isbn = {978-1-4503-6938-1},
+	url = {http://dl.acm.org/citation.cfm?doid=3352460.3358283},
+	doi = {10.1145/3352460.3358283},
+	abstract = {This paper proposes a new fine-grained dynamic pruning technique for CNN inference, named channel gating, and presents an accelerator architecture that can effectively exploit the dynamic sparsity. Intuitively, channel gating identifies the regions in the feature map of each CNN layer that contribute less to the classification result and turns off a subset of channels for computing the activations in these less important regions. Unlike static network pruning, which removes redundant weights or neurons prior to inference, channel gating exploits dynamic sparsity specific to each input at run time and in a structured manner. To maximize compute savings while minimizing accuracy loss, channel gating learns the gating thresholds together with weights automatically through training. Experimental results show that the proposed approach can significantly speed up state-of-the-art networks with a marginal accuracy loss, and enable a trade-off between performance and accuracy. This paper also shows that channel gating can be supported with a small set of extensions to a CNN accelerator, and implements a prototype for quantized ResNet-18 models. The accelerator shows an average speedup of 2.3× for ImageNet when the theoretical FLOP reduction is 2.8×, indicating that the hardware can effectively exploit the dynamic sparsity exposed by channel gating.},
+	language = {en},
+	urldate = {2019-11-26},
+	booktitle = {Proceedings of the 52nd {Annual} {IEEE}/{ACM} {International} {Symposium} on {Microarchitecture}  - {MICRO} '52},
+	publisher = {ACM Press},
+	author = {Hua, Weizhe and Zhou, Yuan and De Sa, Christopher and Zhang, Zhiru and Suh, G. Edward},
+	year = {2019},
+	pages = {139--150},
+	file = {Hua 等。 - 2019 - Boosting the Performance of CNN Accelerators with .pdf:files/5/Hua 等。 - 2019 - Boosting the Performance of CNN Accelerators with .pdf:application/pdf}
+}
+
+@article{frankle_lottery_2019,
+	title = {{THE} {LOTTERY} {TICKET} {HYPOTHESIS}: {FINDING} {SPARSE}, {TRAINABLE} {NEURAL} {NETWORKS}},
+	abstract = {Neural network pruning techniques can reduce the parameter counts of trained networks by over 90\%, decreasing storage requirements and improving computational performance of inference without compromising accuracy. However, contemporary experience is that the sparse architectures produced by pruning are difﬁcult to train from the start, which would similarly improve training performance.},
+	language = {en},
+	author = {Frankle, Jonathan and Carbin, Michael},
+	year = {2019},
+	pages = {42},
+	file = {Frankle 和 Carbin - 2019 - THE LOTTERY TICKET HYPOTHESIS FINDING SPARSE, TRA.pdf:files/7/Frankle 和 Carbin - 2019 - THE LOTTERY TICKET HYPOTHESIS FINDING SPARSE, TRA.pdf:application/pdf}
+}
+
+@article{dhulipala_low-latency_2019,
+	title = {Low-{Latency} {Graph} {Streaming} {Using} {Compressed} {Purely}-{Functional} {Trees}},
+	url = {http://arxiv.org/abs/1904.08380},
+	abstract = {Due to the dynamic nature of real-world graphs, there has been a growing interest in the graph-streaming setting where a continuous stream of graph updates is mixed with arbitrary graph queries. In principle, purely-functional trees are an ideal choice for this setting due as they enable safe parallelism, lightweight snapshots, and strict serializability for queries. However, directly using them for graph processing would lead to signiﬁcant space overhead and poor cache locality. This paper presents C-trees, a compressed purely-functional search tree data structure that signiﬁcantly improves on the space usage and locality of purely-functional trees. The key idea is to use a chunking technique over trees in order to store multiple entries per tree-node. We design theoretically-eﬃcient and practical algorithms for performing batch updates to C-trees, and also show that we can store massive dynamic real-world graphs using only a few bytes per edge, thereby achieving space usage close to that of the best static graph processing frameworks. To study the eﬃciency and applicability of our data structure, we designed Aspen, a graphstreaming framework that extends the interface of Ligra with operations for updating graphs. We show that Aspen is faster than two state-of-the-art graph-streaming systems, Stinger and LLAMA, while requiring less memory, and is competitive in performance with the state-of-the-art static graph frameworks, Galois, GAP, and Ligra+. With Aspen, we are able to eﬃciently process the largest publicly-available graph with over two hundred billion edges in the graph-streaming setting using a single commodity multicore server with 1TB of memory.},
+	language = {en},
+	urldate = {2019-11-26},
+	journal = {arXiv:1904.08380 [cs]},
+	author = {Dhulipala, Laxman and Shun, Julian and Blelloch, Guy},
+	month = apr,
+	year = {2019},
+	note = {arXiv: 1904.08380},
+	keywords = {Computer Science - Data Structures and Algorithms, Computer Science - Distributed, Parallel, and Cluster Computing, Computer Science - Programming Languages},
+	file = {Dhulipala 等。 - 2019 - Low-Latency Graph Streaming Using Compressed Purel.pdf:files/9/Dhulipala 等。 - 2019 - Low-Latency Graph Streaming Using Compressed Purel.pdf:application/pdf}
+}
