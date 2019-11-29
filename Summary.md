@@ -1,0 +1,4 @@
+# Summary
+ Astra is a compilation and execution framework that optimizes execution of a deep learning training job.
+  Astra exploits domain knowledge about deep learning to adopt a custom approach to compiler optimization.  The key insight in Astra is to exploit the unique repetitiveness and predictability of a deep learning job, to perform online exploration of the optimization state space in a work-conserving manner while making progress on the training job.
+  This dynamic state space exploration in Astra uses lightweight profiling and indexing of profile data, coupled with several techniques to prune the exploration state space.  The execution layer custom-wires the infrastructure end-to-end for each job and hardware, while keeping the compiler simple and maintainable. 
